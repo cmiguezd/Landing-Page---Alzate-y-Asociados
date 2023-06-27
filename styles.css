@@ -45,11 +45,27 @@ body {
     justify-content: center;
 }
 
+.seccion1_terms {
+    width: 100vw;
+    height: auto;
+    background: var(--gradient);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .div-seccion1 {
     display: flex;
     padding: 0 3rem;
     width: 95%;
     margin-bottom: 100px;
+}
+
+.div-seccion1_terms {
+    display: flex;
+    padding: 0 3rem;
+    width: 80%;
+    margin-bottom: 40px;
 }
 
 .seccion1-1 {
@@ -60,15 +76,36 @@ body {
     margin-top: 3rem;
 }
 
+.seccion1-1_terms {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .logo {
     width: 50%;
     max-width: 50%;
     min-width: 200px;
 }
 
+.logo_terms {
+    width: 50%;
+    max-width: 200px;
+    min-width: 200px;
+    float: left;
+}
+
 .title-seccion1 {
     color: var(--light);
     line-height: 3.5rem;
+}
+
+.title-seccion1_terms {
+    color: var(--light);
+    line-height: 2rem;
 }
 
 .title-h2 {
@@ -79,6 +116,12 @@ body {
 .title-h1 {
     font-weight: 600;
     font-size: 3rem;
+}
+
+.title-h1_terms {
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
 }
 
 .CTA1 {
@@ -115,6 +158,27 @@ body {
 .CTA1_tp:hover {
     transition: all 0.5s;
     scale: 110%;
+}
+
+.CTA1_terms {
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px;
+    width: 16rem;
+    background: var(--gradient2);
+    border-radius: 50px;
+    box-shadow: 8px 8px 8px 1px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s;
+    scale: 100%;
+}
+
+.CTA1_terms:hover {
+    transition: all 0.5s;
+    scale: 110%;
+}
+
+.CTA1_terms>a{
+    font-size: 15px;
 }
 
 .boton {
@@ -295,6 +359,16 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 5rem 0 2rem 0;
     z-index: 0;
 }
+.seccion2_terms {
+    width: 100wv;
+    height: auto;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0 2rem 0;
+    z-index: 0;
+}
 
 .div-seccion2 {
     padding: 0 3rem;
@@ -311,6 +385,11 @@ input[type=number]::-webkit-outer-spin-button {
     font-weight: 600;
     font-size: 2.5rem;
     width: 50%;
+}
+
+.text-terms{
+    padding: 0 3rem;
+    width: 80%;
 }
 
 .listas {
@@ -1012,6 +1091,16 @@ input[type=number]::-webkit-outer-spin-button {
         margin: 0;
         width: 200px;
     }
+
+    .seccion1-1_terms {
+        flex-direction: column;
+        
+    }
+
+    .CTA1_terms {
+    margin-top: 30px;    
+    }
+
 }
 
 @media screen and (max-width:600px) {
