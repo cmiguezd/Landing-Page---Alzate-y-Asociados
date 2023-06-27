@@ -5,7 +5,6 @@
     padding: 0;
     margin: 0;
     font-family: Poppins;
-    
 }
 
 html {
@@ -21,8 +20,9 @@ body {
     --light: #f0f0f0;
     --dark: #292929;
     --blue: rgb(0, 150, 196);
-    --gradient: linear-gradient(135deg, rgb(32, 87, 168) 7.06%, rgb(4, 6, 60) 100%);
-    --gradient2: linear-gradient(135deg, rgb(0, 150, 196) 7.06%, rgb(17, 97, 190) 100%);
+    --gradient: linear-gradient(135deg, #06283D 7.06%, #1363DF 100%);
+    --gradientinv: linear-gradient(135deg, #1363DF 7.06%, #06283D 100%);
+    --gradient2: linear-gradient(90deg, #47B5FF 0%, #1566D3 100%);
 }
 
 .seccion1 {
@@ -37,12 +37,12 @@ body {
 
 .seccion1_tp {
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     background: var(--gradient);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .seccion1_terms {
@@ -202,19 +202,19 @@ body {
     flex-direction: column;
     width: 50%;
     align-items: flex-end;
-    justify-content: top;
+    justify-content: flex-start;
 }
 
 .background-image {
-    width: 60%;
+    width: 70%;
     min-width: 400px;
-    margin: 70px 0 0 0;
+    margin:0;
 }
 
 .background-image_tp {
-    width: 60%;
+    width: 80%;
     min-width: 400px;
-    margin: 150px 0 0 0;
+    margin: 0;
 }
 
 .formulario {
@@ -517,16 +517,17 @@ input[type=number]::-webkit-outer-spin-button {
 
 .seccion3 {
     width: 100vw;
-    height: 20vh;
-    background: var(--gradient);
+    height: 25vw;
+    background: var(--gradientinv);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .div-seccion3 {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 0 3rem;
@@ -534,10 +535,12 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .title-seccion3 {
-    width: 25%;
+    width: 100%;
     color: var(--light);
     font-weight: 600;
     font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .text-seccion3 {
@@ -548,8 +551,52 @@ input[type=number]::-webkit-outer-spin-button {
 
 }
 
-.text-seccion3>p>a {
-    color: var(--blue);
+.banderas{
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    margin: 40px 0;
+    
+}
+
+.bandera{
+    width: 10%;
+    transition: all 0.5s;
+    scale: 100%;
+}
+
+.bandera:hover{
+    transition: all 0.5s;
+    scale: 110%;
+}
+
+.bandera > a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--light);
+    text-decoration: none;
+    
+}
+
+.bandera > a > img{
+    box-shadow: 8px 8px 8px 1px rgba(0, 0, 0, 0.3);
+}
+
+.namepais{
+    padding-top: 10px;
+}
+
+.text2-seccion3 {
+    width: 80%;
+    text-align: center;
+}
+
+.text2-seccion3 >a {
+    color: var(--light);
+    font-size: 1.3rem;
+    padding: 5px 50px;
+    border-radius: 25px;
 }
 
 .seccion4 {
