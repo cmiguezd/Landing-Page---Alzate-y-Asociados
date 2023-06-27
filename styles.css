@@ -193,7 +193,14 @@ html {
     width: 90%;
     background-color: #d9d9d9;
     padding: 10px 15px;
-    margin-right: 20px;
+    margin-right: 20px;   
+}
+
+#nameempresa_input > [required],
+#name_input > [required],
+#telefono_input > [required],
+#email_input > [required] {
+    box-shadow: 0 0 10px 1px #818181
 }
 
 #form_button {
