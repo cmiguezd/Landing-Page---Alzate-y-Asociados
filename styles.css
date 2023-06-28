@@ -517,12 +517,13 @@ input[type=number]::-webkit-outer-spin-button {
 
 .seccion3 {
     width: 100vw;
-    height: 25vw;
+    height: auto;
     background: var(--gradientinv);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 30px 0;
 }
 
 .div-seccion3 {
@@ -964,8 +965,9 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .seccion3 {
-        height: auto;
-        padding: 20px 0;
+        width: 100%;
+        padding: 0;
+        margin:0;
     }
 
     .title-seccion3 {
@@ -974,6 +976,8 @@ input[type=number]::-webkit-outer-spin-button {
 
     .text-seccion3 {
         font-size: 1rem;
+        max-width: 80%;
+        text-align: center;
 
     }
 
@@ -1066,7 +1070,7 @@ input[type=number]::-webkit-outer-spin-button {
     .div-seccion3 {
         width: 100%;
         flex-direction: column;
-        padding: 0 1rem;
+        padding: 0 3rem;
     }
 
     .title-seccion3 {
@@ -1081,7 +1085,7 @@ input[type=number]::-webkit-outer-spin-button {
         font-size: 1rem;
         width: 100%;
         padding: 0;
-        margin: 0
+        margin: 0 30px
     }
 
     .div-seccion4 {
@@ -1147,6 +1151,13 @@ input[type=number]::-webkit-outer-spin-button {
     .CTA1_terms {
     margin-top: 30px;    
     }
+    
+.text2-seccion3{padding: 0 5px 20px 5px;}
+
+    .text2-seccion3 >a {
+        font-size: 1rem;
+        padding: 5px 5px;
+    }
 
 }
 
@@ -1154,4 +1165,21 @@ input[type=number]::-webkit-outer-spin-button {
     .slide-track {
         grid-template-columns: auto auto;
     }
+
+.banderas{
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}
+
+.bandera{
+    width: 70px;
+    margin-bottom: 30px;
+
+}
+
+.namepais{
+    text-align: center;
+}
+
 }
